@@ -16,7 +16,7 @@ import javax.annotation.Resource;
  */
 @Component
 @RabbitListener(queues = "xing")
-public class BusinessReceiver {
+public class RabbitMQConsumer {
 
     @Resource
     MqUserRepository mu;

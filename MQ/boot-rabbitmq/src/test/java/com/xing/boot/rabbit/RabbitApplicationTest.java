@@ -18,7 +18,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class RabbitApplicationTest {
 
     @Autowired
-    private BusinessSender bSender;
+    private RabbitMQProvider rProvider;
 
     @Test
     public void xing() {
@@ -27,7 +27,7 @@ public class RabbitApplicationTest {
             mqUser.setUsername("um"+i);
             mqUser.setPassword("pw"+i);
             mqUser.setEamil(i+"@126.com");
-            bSender.send(mqUser);
+            rProvider.send(mqUser);
         }
     }
 }

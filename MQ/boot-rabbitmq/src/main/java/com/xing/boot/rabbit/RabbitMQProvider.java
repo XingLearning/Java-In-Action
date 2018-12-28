@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  * @date 2018/12/28 16:16
  */
 @Component
-public class BusinessSender {
+public class RabbitMQProvider {
 
     @Autowired
     private AmqpTemplate rabbitTemplate;
