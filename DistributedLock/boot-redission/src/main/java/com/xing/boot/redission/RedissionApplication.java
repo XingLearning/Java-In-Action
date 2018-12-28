@@ -20,10 +20,10 @@ import javax.annotation.Resource;
 @SpringBootApplication
 @RestController
 @EnableAsync
-public class DemoApplication {
+public class RedissionApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
+        SpringApplication.run(RedissionApplication.class, args);
     }
 
 
