@@ -10,10 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 
 /**
- * 简要描述
+ * 启动类
  *
- * @author yangweixing
- * @date $ $
+ * @author weixing
+ * @date 2018/12/28 11:48
+ *
+ *
  */
 @SpringBootApplication
 @RestController
@@ -31,14 +33,14 @@ public class DemoApplication {
 
     @GetMapping("")
     public void test(){
-        for(int i = 0 ;i<10000;i++){
+        for(int i = 0 ;i < 10000; i++){
             as.addNoAsync();
         }
     }
 
     @GetMapping("lock")
     public void  test2(){
-        for(int i = 0 ;i<10000;i++){
+        for(int i = 0 ;i < 10000; i++){
             as.addAsync();
         }
     }

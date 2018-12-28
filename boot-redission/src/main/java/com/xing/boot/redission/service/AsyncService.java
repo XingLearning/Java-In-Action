@@ -9,12 +9,17 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
+/**
+ * 分布式琐实现类
+ *
+ * @author weixing
+ * @date 2018/12/28 11:47
+ */
 @Service
 public class AsyncService {
 
     @Resource
     TestEntityRepository ts;
-
 
     @Resource
     DistributedLockTemplate distributedLockTemplate;
